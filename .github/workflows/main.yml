@@ -6,3 +6,11 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+      - name: Code review
+        uses: codacy/codacy-analysis-cli-action@v1
+        with:
+          files: '**/*.py'
+          working-directory: ./ci-cd-testing
+          verbose: true
+
+
