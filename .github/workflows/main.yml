@@ -7,7 +7,7 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
       - name: Code review
-        uses: codacy/codacy-analysis-cli-action@2.2.2
+        uses: codacy/codacy-analysis-cli-action@master
         with:
           files: '**/*.py'
           working-directory: ./ci-cd-testing
